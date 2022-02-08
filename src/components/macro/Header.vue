@@ -1,5 +1,6 @@
 <template>
     <header>
+        
         <div class="top_head">
             <div class="ms_container">
                 <span class="weekly_working_hours"><i class="fas fa-clock"></i> Open Hours: Mon-Sat-9:00-18:00 </span>
@@ -13,36 +14,47 @@
             </div>
 
         </div>
+        <Jumbo/>
+        <video-intro/>
 
     </header>
 </template>
 
 <script>
+import Jumbo from "../section/Jumbo.vue"
+import VideoIntro from '../section/VideoIntro.vue'
 export default {
-    name: 'Header'
+    name: 'Header',
+    components:{
+        Jumbo,
+        VideoIntro
+    }
 
 }
 </script>
 
 <style lang="scss" scoped>
 @import "../../assets/style/vars.scss";
-.top_head{
-    background:$bg_top_head;
-    padding: 20px;
-    .ms_container{
-        color:#FFFFFF ;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 12px;
-        font-weight: 100;
-        ul{
-            display: flex;
+
+    
+    .top_head{
+        background:$bg_top_head;
+        padding: 20px;
+        .ms_container{
+            color:#FFFFFF ;
+            display:flex;
             align-items: center;
-            gap: 20px;
-            list-style-type: none;
-            margin: 0;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 100;
+            .contacts{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                list-style-type: none;
+                margin: 0;
+            }
         }
     }
-}
+
 </style>

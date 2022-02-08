@@ -7,8 +7,45 @@ body{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
+h6{
+    text-transform: uppercase;
+    color:#52BABB;
+    font-weight: bold;
+}
+
 .ms_container{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
+.ms_sec_cont{
+    width: 60%;
+    margin:0 auto;
+    max-width: 1000px;
+}
+//buttons
+a.button_green{
+    text-decoration: none;
+    color :#FFFFFF;
+    padding: 10px 20px;
+    background: #048383;
+    border-radius: 5px;
+}
+a.empty_button{
+    text-decoration: none;
+    color :#FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: solid 1px #048383;
+}
+//title
+h1{
+    font-weight: bold;
+}
+span.title_evidence{
+    color: #098081;
+    background-color: rgba(9, 128, 129,0.2);
+    font-weight: bold;
+    padding:0 10px ;
+}
+
