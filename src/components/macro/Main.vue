@@ -1,10 +1,16 @@
 <template>
-<div></div>
+<div>
+    <SecMainNumb/>
+</div>
 </template>
 
 <script>
+import SecMainNumb from '../section/SecMainNumb.vue'
 export default {
-    name: "Main"
+    name: "Main",
+    components:{
+        SecMainNumb
+    }
 }
 </script>
 

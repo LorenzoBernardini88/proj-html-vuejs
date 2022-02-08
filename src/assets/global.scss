@@ -7,11 +7,6 @@ body{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
 }
-h6{
-    text-transform: uppercase;
-    color:#52BABB;
-    font-weight: bold;
-}
 
 .ms_container{
     width: 80%;
@@ -42,10 +37,19 @@ a.empty_button{
 h1{
     font-weight: bold;
 }
-span.title_evidence{
+h6{
+    text-transform: uppercase;
+    color:#52BABB;
+    font-weight: bold;
+}
+span.title_evidence,
+span.title_evidence2{
     color: #098081;
     background-color: rgba(9, 128, 129,0.2);
     font-weight: bold;
     padding:0 10px ;
+}
+span.title_evidence2{
+    color: #FFFFFF;
 }
 
