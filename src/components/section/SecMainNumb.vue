@@ -5,7 +5,7 @@
         <h1><span class="title_evidence2">Result</span> in Numbers</h1>
     </div>
     <div class="ms_container">
-        <div v-for="elemento in dataNumbers" :key="elemento" class="numbers_cont">
+        <div v-for="(elemento,indice) in dataNumbers" :key="indice" class="numbers_cont">
             <div class="number">{{elemento.numb}}</div>
             <div class="text_number">{{elemento.text}}</div>
         </div>
@@ -57,6 +57,7 @@ export default {
     h1{
         color: #ffffff;
         margin-top:20px;
+        
     }
     .ms_container{
         display: flex;

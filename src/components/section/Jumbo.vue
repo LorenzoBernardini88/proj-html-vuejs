@@ -1,6 +1,6 @@
 <template>
     <div class="jumbo">
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
         <div class="jumbo_cont">
             <h1>Financial Risk</h1>
             <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function</p>
@@ -12,7 +12,7 @@
         <div class="ms_container">
             <img src="../../assets/nexgen-logo.svg" alt="">
             <ul>
-                <li href="#" v-for="elemento in dataNav" :key="elemento">{{elemento.text}}</li>
+                <li href="#" v-for="(elemento,index) in dataNav" :key="index">{{elemento.text}}</li>
                 <li><i href="#" class="far fa-user"></i></li>
                 <li><a class="button_green" href="#">GET IN TOUCH</a></li>
             </ul>
@@ -37,20 +37,31 @@ export default {
 @import "../../assets/style/vars.scss";
 .jumbo{
     min-height: 600px;
-    background-image: url("../../assets/bg_img/bg-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: rgba(0, 0, 0,0.5);
+    
     position: relative;
-    .overlay{
-        widows: 100%;
-        height: 100%;
+    &::before{
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0,0.3);
+        background-image: url("../../assets/bg_img/bg-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index:-1;
     }
+    // .overlay{
+    //     widows: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background: rgba(0, 0, 0,0.3);
+    
     .ms_container{
         display: flex;
         align-items: center;
