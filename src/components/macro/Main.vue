@@ -21,7 +21,7 @@ export default {
         SecMainService,
         SecTeamMain,
         SecNewsMain,
-        SecLetterMain
+        SecLetterMain,
     }
 }
 </script>
