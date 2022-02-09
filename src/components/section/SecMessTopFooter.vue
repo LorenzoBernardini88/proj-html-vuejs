@@ -115,13 +115,13 @@ export default {
             list-style-type: none;
             padding:0;
             
-
             li {
                 display: flex;
                 align-items: center;
                 gap: 10px;
                 margin-bottom: 20px;
                 font-size: $size_p;
+                font-weight: 200;
                 color: #048383;
             }
         }
@@ -129,6 +129,6 @@ export default {
             color: #048383;
         }
     }
-
 }
 </style>
+
