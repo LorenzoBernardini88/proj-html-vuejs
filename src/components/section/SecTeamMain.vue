@@ -5,7 +5,12 @@
                 <h6>we like what we do </h6>
                 <h1><span class="title_evidence">Team</span> of Expert</h1>
                 <p>Ethics and integrity are the bases on wich our profesdsionals build their careers.They are fundamentals that become daily attitudes</p>
-                <div class="team_profile"></div>
+                <div class="team_profile">
+                    <card-team
+                    v-for="(elemento,indice) in dataTeam"
+                    :key="indice"
+                    :team="elemento"/>
+                </div>
             </div>
         </div>
         <div class="pres_cit">
@@ -21,8 +26,39 @@
             
 
 <script>
+import CardTeam from '../commons/CardTeam.vue'
 export default {
-    name: "SecTeamMain"
+    name: "SecTeamMain",
+    components: { 
+        CardTeam 
+    },
+    data(){
+        return{
+            dataTeam : [
+                {
+                    name:"David Cooper",
+                    role: "cto & co-founder",
+                    img:  require("../../assets/team_img/team-1.jpg"),
+                },
+                {
+                    name: "Oliver Stone",
+                    role: "chief procurement",
+                    img:  require("../../assets/team_img/team-3.jpg"),
+                },
+                {
+                    name: "Emma Lopez",
+                    role: "chief marketing",
+                    img:  require("../../assets/team_img/team-2.jpg"),
+                },
+                {
+                    name: "T.Johnson",
+                    role: "ceo & president",
+                    img:  require("../../assets/team_img/team-4.jpg"),
+                },
+            ]
+        }
+    }
+
 }
 </script>
 
@@ -32,6 +68,7 @@ export default {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    
     
     .team_cont{
         width: 65%;
@@ -44,6 +81,12 @@ export default {
                 color:$color_p;
                 font-size:$size_p;
             }
+        }
+        .team_profile{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            gap: 10px;
         }
     }
     .pres_cit{
