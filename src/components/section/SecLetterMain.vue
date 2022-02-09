@@ -30,14 +30,14 @@ export default {
     align-items: center;
     justify-content: center;
     .ms_sec_cont{
-        height: 200px;
+        height: 180px;
         display: flex;
         justify-content: space-between;
         .newsLetter_text{
             width: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
 
             h1,p{
                 color:#fff;
@@ -46,6 +46,7 @@ export default {
                 font-size: $size_p;
                 font-weight: 100;
                 width: 90%;
+                margin: 0;
             }
         }
         .input_cont{
