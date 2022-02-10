@@ -18,8 +18,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent et enim sit</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et enim sit amet,Lorem ipsum dolor sit amet</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent et enim sit</p>
-            <p class="president">T.Johnson</p>
-            <i class="fa-solid fa-quote-right mark"></i>
+            <p class="president">T.Johnson <i class="fa-solid fa-quote-right"></i></p>
+            
         </div>
     </div>
 </template>
@@ -69,7 +69,6 @@ export default {
     display: flex;
     justify-content: space-between;
     
-    
     .team_cont{
         width: 65%;
         .text_team{
@@ -94,7 +93,7 @@ export default {
         background: #098081;
         color: #fff;
         padding: 20px;
-        position: relative;
+
         .speech{
             font-weight: bold;
             font-size: $size_p;
@@ -110,12 +109,12 @@ export default {
         .fa-quote-right{
             color:#676669;
             font-size: 25px;
-            position: absolute;
-            right: 20px;
-            bottom: 35px;
-
+            position: relative;
+            left: 120px;
         }
     }
-
 }
 </style>
+
+    
+
