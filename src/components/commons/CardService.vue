@@ -64,15 +64,17 @@ export default {
 
     }
     &:hover .fa-arrow-right{
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         padding: 5px;
         background: #048383;
         border-radius: 50%;
+        transition: 0.2s linear;
     }
     &:hover span.icon,
     &:hover span.arrow{
         color: #fff;
+        transition: 0.2s linear;
     }
 
 }
