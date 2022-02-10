@@ -19,10 +19,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et enim sit amet,Lorem ipsum dolor sit amet</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent et enim sit</p>
             <p class="president">T.Johnson <i class="fa-solid fa-quote-right"></i></p>
-            
         </div>
     </div>
 </template>
+            
             
 
 <script>
@@ -68,7 +68,7 @@ export default {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    
+    position: relative;
     .team_cont{
         width: 65%;
         .text_team{
@@ -93,15 +93,18 @@ export default {
         background: #098081;
         color: #fff;
         padding: 20px;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
 
         .speech{
             font-weight: bold;
-            font-size: $size_p;
+            font-size: 17px;
             margin-bottom: 15px;
         }
         p{
-            font-size: 12px;
-            font-weight: 100;
+            font-size: 15px;
+            font-weight: 200;
         }
         p.president{
             font-weight: bold;
@@ -110,7 +113,7 @@ export default {
             color:#676669;
             font-size: 25px;
             position: relative;
-            left: 120px;
+            left: 110px;
         }
     }
 }
