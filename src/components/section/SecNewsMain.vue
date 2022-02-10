@@ -91,13 +91,11 @@ export default {
             &:hover .text_profile{
                 display: inline-block;
                 bottom: 70px;
-                transition: 0.2s linear;
             }
             &:hover .name_hover,
             &:hover .period_hover,
             &:hover .parag_hover {
                 display: block;
-                transition: 1s linear;
             }
             .text_profile{
                 width: 80%;
@@ -106,6 +104,7 @@ export default {
                 position: absolute;
                 bottom: 10px;
                 right: 30px;
+                transition: 0.2s linear;
             }
             .name_hover,
             .period_hover{
@@ -113,6 +112,7 @@ export default {
                 font-size: 14px;
                 position: absolute;
                 top: 30px;
+                transition: 1s linear;
             }
             .name_hover{
                 left: 20px;
@@ -126,14 +126,15 @@ export default {
                 position: absolute;
                 bottom: 10px;
                 right: 0;
+                transition: 0.5s linear;
             }
             img{
                 width: 100%;
                 border-radius: 10px;
                 object-fit: cover;
+                transition: 0.2s linear;
                 &:hover{
                     filter: blur(2px);
-                    transition: 0.2s linear;
                 }
             }
             .overlay{
@@ -146,9 +147,9 @@ export default {
                 top: 0;
                 border-radius: 10px;
                 background: rgba(0,0,0,0.3);
+                transition: 0.2s linear;
                 &:hover{
                     display: none;
-                    transition: 0.2s linear;
                 }
                 
             }
@@ -156,6 +157,9 @@ export default {
     }
 }
 </style>
+
+
+
 
 
 

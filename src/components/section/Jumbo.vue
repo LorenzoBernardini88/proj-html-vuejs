@@ -1,12 +1,12 @@
 <template>
     <div class="jumbo">
-        <!-- <div class="overlay"></div> -->
+        <!-- <img v-for="(image,indice) in imgJumbo" :key="indice" :src="image" alt=""> -->
         <div class="jumbo_cont">
             <h1>Financial Risk</h1>
             <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function</p>
             <div class="buttons_jumbo">
                 <a class="button_green" href="#">GET IN TOUCH</a>
-                <a id="btn_read" class="empty_button" href="#" :class="{button_green : hover}" @mouseover="hoverButton()" @mouseleave="hover=false" >READ MORE</a>
+                <a id="btn_read" class="empty_button" href="#" :class="{color_hover : hover}" @mouseover="hover=true" @mouseleave="hover=false" >READ MORE</a>
             </div>
         </div>
         <div class="ms_container">
@@ -29,19 +29,15 @@ export default {
         return{
             dataNav : data,
             hover : false,
-            element: ""
+            element: "",
+            corrente : 0,
+            imgJumbo:[
+                require("../../assets/bg_img/bg-1.jpg"),
+                require("../../assets/bg_img/bg-3.jpg")
+            ]
         }
     },
-    methods:{
-        hoverButton(){
-            if(this.hover==false){
-                this.element = document.getElementById('btn_read');
-                this.element.classList.remove('empty_button');
-                this.hover= true
-                //return this.hover
-            } 
-        }
-    }
+    
 }
 </script>
 

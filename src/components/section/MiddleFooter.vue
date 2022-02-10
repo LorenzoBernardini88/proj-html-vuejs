@@ -5,7 +5,7 @@
                 <img src="../../assets/nexgen-logo.svg" alt="">
                 <p>A functional HTML Template for Comporate & Business</p>
                 <p v-for="(elemento,indice) in dataCard1" :key="indice"><i :class="elemento.icon"></i> {{elemento.info}}</p>
-                <a href="#" class="empty_button" :class="{button_green :hover}" @mouseover="hover = true" @mouseleave="hover = false">get in touch</a>
+                <a href="#" class="empty_button" :class="{color_hover :hover}" @mouseover="hover = true" @mouseleave="hover = false">get in touch</a>
             </div>
             <div class="ms_card card2">
                 <h5>About</h5>
