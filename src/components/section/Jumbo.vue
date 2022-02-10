@@ -1,6 +1,6 @@
 <template>
     <div class="jumbo">
-        <!-- <img v-for="(image,indice) in imgJumbo" :key="indice" :src="image" alt=""> -->
+        <!-- <img class="img_slide" v-for="(image,indice) in imgJumbo" :key="indice" :src="image" alt=""> -->
         <div class="jumbo_cont">
             <h1>Financial Risk</h1>
             <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function</p>
@@ -47,8 +47,8 @@ export default {
 .jumbo{
     min-height: 600px;
     background: rgba(0, 0, 0,0.5);
-    
     position: relative;
+    
     &::before{
         content: "";
         position: absolute;
@@ -61,7 +61,6 @@ export default {
         background-repeat: no-repeat;
         z-index:-1;
     }
-    
     .ms_container{
         display: flex;
         align-items: center;
@@ -101,13 +100,13 @@ export default {
             font-weight: 100;
             margin: 30px 0 ;
         }
-
         a.empty_button{
             margin-left:20px;
         }
     }
 }
 </style>
+
 
 
 

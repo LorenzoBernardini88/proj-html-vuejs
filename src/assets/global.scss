@@ -81,6 +81,9 @@ span.title_evidence2{
     padding: 10px;
 }
 //hover
+li:hover{
+    cursor: pointer;
+}
 .translate{
     transform: translate(0,-10px);
 }
