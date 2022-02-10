@@ -35,17 +35,18 @@ export default {
 @import "../../assets/style/vars.scss";
 .cardTeam_cont{
     width: 45%;
-    height: 150px;
+    height: 140px;
     display: flex;
     gap: 20px;
     
     .profile_photo{
         width: 50%;
+        border-radius: 5px;
         img{
             border-radius: 5px;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            
         }
     }
     .text_card{

@@ -104,7 +104,7 @@ export default {
         }
         p{
             font-size: 15px;
-            font-weight: 200;
+            font-weight: 300;
         }
         p.president{
             font-weight: bold;
