@@ -6,7 +6,7 @@
             <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function</p>
             <div class="buttons_jumbo">
                 <a class="button_green" href="#">GET IN TOUCH</a>
-                <a class="empty_button" href="#" :class="{button_green : hover}" @mouseover="hover = true" @mouseleave="hover = false">READ MORE</a>
+                <a id="btn_read" class="empty_button" href="#" :class="{button_green : hover}" @mouseover="hoverButton()" @mouseleave="hover=false" >READ MORE</a>
             </div>
         </div>
         <div class="ms_container">
@@ -28,9 +28,20 @@ export default {
     data(){
         return{
             dataNav : data,
-            hover : false
+            hover : false,
+            element: ""
         }
     },
+    methods:{
+        hoverButton(){
+            if(this.hover==false){
+                this.element = document.getElementById('btn_read');
+                this.element.classList.remove('empty_button');
+                this.hover= true
+                //return this.hover
+            } 
+        }
+    }
 }
 </script>
 

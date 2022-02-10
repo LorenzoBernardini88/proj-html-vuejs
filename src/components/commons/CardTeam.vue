@@ -25,7 +25,8 @@ export default {
             "fa-brands fa-facebook-f social",
             "fa-brands fa-twitter social",
             "fa-brands fa-linkedin-in social"
-            ]
+            ],
+            
         }
     }
 }

@@ -1,5 +1,5 @@
 <template>
-<div class="card_serv">
+<div class="card_serv" :class="{translate : trans, icon_cont: trans}" @mouseover="trans=true" @mouseleave="trans=false">
     <div class="icon_cont">
         <span class="icon"><i :class="servizio.icon"></i></span>
         <span class="arrow"><i :class="servizio.arrow"></i></span>
@@ -14,6 +14,11 @@
 <script>
 export default {
     name: "CardService",
+    data(){
+        return{
+            trans : false
+        }
+    },
     props:{
         servizio: Object
     }
@@ -29,6 +34,7 @@ export default {
     background:#1D2528;
     padding:30px;
     margin-bottom: 40px ;
+    transition: 0.2s linear;
 
     .icon_cont{
         display: flex;
@@ -39,8 +45,10 @@ export default {
         }
         span.arrow{
             color:#048383;
-            }
+        }
+        
     }
+
     .text_service{
         width: 90%;
         .title{
@@ -54,6 +62,17 @@ export default {
             font-weight: 300;
         }
 
+    }
+    &:hover .fa-arrow-right{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        background: #048383;
+        border-radius: 50%;
+    }
+    &:hover span.icon,
+    &:hover span.arrow{
+        color: #fff;
     }
 
 }
