@@ -5,7 +5,7 @@
             <h6>our business areas</h6>
             <h1>Excellence in<span class="title_evidence2"> Service</span></h1>
             <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
-            <a href="#" class="empty_button">see all</a>
+            <a href="#" class="empty_button" :class="{color_hover : hover}" @mouseover="hover=true" @mouseleave="hover=false">see all</a>
         </div>
         <div class="card_service_cont">
             <CardService
@@ -28,6 +28,7 @@ export default {
     },
     data(){
         return{
+            hover: false,
             dataService: [
                 {
                     icon:"fa-solid fa-network-wired",
