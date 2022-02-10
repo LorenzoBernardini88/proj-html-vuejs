@@ -128,7 +128,6 @@ export default {
                 display: inline-block;
                 margin-top: 15px;
             }
-
         }
         .card2,
         .card3,
