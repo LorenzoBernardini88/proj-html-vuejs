@@ -6,7 +6,7 @@
             <p>The right outcomes depend on continuous rigor in governance, models, and processes across the finance function</p>
             <div class="buttons_jumbo">
                 <a class="button_green" href="#">GET IN TOUCH</a>
-                <a class="empty_button" href="#">READ MORE</a>
+                <a class="empty_button" href="#" :class="{button_green : hover}" @mouseover="hover = true" @mouseleave="hover = false">READ MORE</a>
             </div>
         </div>
         <div class="ms_container">
@@ -27,11 +27,13 @@ export default {
     name: "Jumbo",
     data(){
         return{
-            dataNav : data
+            dataNav : data,
+            hover : false
         }
-    }
+    },
 }
 </script>
+
 
 <style lang="scss" scoped>
 @import "../../assets/style/vars.scss";
@@ -93,8 +95,8 @@ export default {
             margin: 30px 0 ;
         }
 
-        a.button_green{
-            margin-right:20px
+        a.empty_button{
+            margin-left:20px;
         }
     }
 }
