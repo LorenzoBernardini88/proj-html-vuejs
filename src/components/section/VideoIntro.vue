@@ -4,7 +4,7 @@
 
         <h6>introduction video</h6>
         <h1>Advisory <span class="title_evidence">Performance</span></h1>
-        <p>Financial executives need to review thier strategies, operating models and capabilities so that their areas can genrate sound information for better decision making</p>
+        <p>Financial executives need to review thier strategies, operating models and capabilities so that their areas can genrate sound information for better decision making.</p>
         </div>
         <div class="img_video_cont">
             <img src="../../assets/video-1.jpg" alt="">
@@ -30,7 +30,7 @@ export default {
     gap:20px;
 
     .text_cont{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         text-align: center;
         display: flex;

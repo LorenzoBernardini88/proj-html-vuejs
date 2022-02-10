@@ -73,7 +73,7 @@ export default {
         }
         ul {
             margin:0;
-            font-size: 18px;
+            font-size: 16px;
             list-style-type: none;
             color:#FFFFFF ;
             display: flex!important;
@@ -93,6 +93,7 @@ export default {
         h1{
             font-size: 4rem ;
             font-weight: bold;
+            margin: 0;
         }
 
         p{

@@ -1,11 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import '~bootstrap/scss/bootstrap.scss'; 
+@import "./style/vars.scss";
 
 //general
 body{
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 //containers
 .ms_container{
@@ -20,7 +22,8 @@ body{
 }
 //buttons
 a.button_green{
-    display: inline;
+    display: inline-block;
+    font-size: $size_p;
     text-decoration: none;
     color :#FFFFFF;
     padding: 10px 20px;
@@ -30,6 +33,7 @@ a.button_green{
 }
 a.empty_button{
     text-decoration: none;
+    font-size: $size_p;
     color :#FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
@@ -40,6 +44,7 @@ a.empty_button{
 //title
 h1{
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 h6{
     text-transform: uppercase;

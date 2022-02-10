@@ -45,7 +45,7 @@ export default {
             p{
                 font-size: $size_p;
                 font-weight: 100;
-                width: 90%;
+                width: 95%;
                 margin: 0;
             }
         }

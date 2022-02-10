@@ -50,8 +50,8 @@ export default {
         }
         .pharag{
             color: #BCBDBD;
-            font-size: 12px;
-            font-weight: 100;
+            font-size: 13px;
+            font-weight: 300;
         }
 
     }

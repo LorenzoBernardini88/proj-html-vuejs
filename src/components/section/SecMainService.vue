@@ -92,9 +92,9 @@ export default {
             margin: 20px 0;
         }
         p{
-            width: 90%;
+            width: 80%;
             color: #BCBDBD;
-            font-weight: 100;
+            font-weight: 300;
             font-size: $size_p;
         }
         a.empty_button{
